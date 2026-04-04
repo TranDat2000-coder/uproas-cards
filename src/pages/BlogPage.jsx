@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import ContactSection from '../components/ContactSection'
 import CTASection from '../components/CTASection'
+import Footer from '../components/Footer'
 import FormModal from '../components/FormModal'
+import Navbar from '../components/Navbar'
 
 const BLOG_CATEGORIES = ['All', 'Credit Card Tips', 'Ads Payment', 'Debit Cards', 'Virtual Card', 'Banking', 'Payment Process', 'Credit Card']
 
@@ -151,7 +150,6 @@ export default function BlogPage() {
           </div>
         </section>
 
-        <ContactSection />
         <CTASection />
       </main>
       <Footer />

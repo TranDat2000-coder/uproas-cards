@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import ContactSection from '../components/ContactSection'
+import { Link, useParams } from 'react-router-dom'
 import CTASection from '../components/CTASection'
+import Footer from '../components/Footer'
 import FormModal from '../components/FormModal'
+import Navbar from '../components/Navbar'
 
 const BLOG_POSTS = {
   'understanding-css-grid': {
@@ -382,7 +381,6 @@ export default function BlogPostPage() {
           </div>
         </section>
 
-        <ContactSection />
         <CTASection />
       </main>
       <Footer />

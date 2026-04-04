@@ -1,40 +1,47 @@
-export default function ContactSection() {
+import CTASection from '../components/CTASection'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
+
+export default function PrivacyPolicyPage() {
   return (
-    <section id="section-contact" className="section-contact cc-top-0 u-spacing-inline u-spacing-block">
-      <div className="container cc-1080">
-        <div className="cta-card-two-wrapper u-overflow-hidden u-position-relative u-stacking-context">
-          <div className="cta-card-two u-position-relative u-overflow-hidden">
-            <img
-              src="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6870f837542f990f755d9187_still-have-questions-bg.avif"
-              loading="lazy"
-              alt=""
-              className="cta-bg u-cover u-select-none"
-            />
-            <div className="cta-card_content u-text-center">
-              <h2 className="heading-h6 u-text-color-dark" style={{ fontSize: '2rem', fontWeight: '700', marginBottom: '1rem' }}>
-                🚀 GLOBAL AD PAYMENT SOLUTION
-              </h2>
-              <p className="text-xl u-text-color-dark u-weight-500" style={{ marginBottom: '1.5rem' }}>
-                For Media Buyers · Agencies · Affiliate Teams
-              </p>
-              <p className="text-lg u-text-color-dark" style={{ marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
-                We provide enterprise-grade virtual card infrastructure for high-volume advertising operations.
-              </p>
-
-              <div className="cta_buttons u-display-flex" style={{ justifyContent: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '2rem' }}>
-                <div className="cta-card_socials">
-                  <a href="https://t.me/ZG_Mine" target="_blank" rel="noreferrer" className="cta-card_social-link w-inline-block">
-                    <img src="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b7763790da7eabc642_eefeb9a88ac35b1d5cf67d3d97c96b87_Telegram.webp" loading="lazy" alt="Telegram" />
-                  </a>
+    <div className="page-wrapper">
+      <Navbar />
+      <main className="main">
+        <header className="section-home-header">
+          <div className="home-header_wrapper cc-policy u-position-relative u-stacking-context u-overflow-hidden">
+            <div className="home-header_bg u-select-none u-z-n1 u-cover">
+              <svg xmlns="http://www.w3.org/2000/svg" style={{ visibility: 'hidden', position: 'absolute' }} aria-hidden="true" width="0" height="0" version="1.1">
+                <defs>
+                  <filter id="gooey">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="gooey" />
+                    <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+                  </filter>
+                </defs>
+              </svg>
+              <div className="home-header_bg_shape u-cover u-select-none u-z-n1" />
+            </div>
+            <div className="u-spacing-inline">
+              <div className="container cc-1080">
+                <div className="common-header_content u-display-flex u-text-center">
+                  <h1 className="partner_header_title heading-h6 u-color-typography-25">🚀 GLOBAL AD PAYMENT SOLUTION</h1>
                 </div>
-                <a href="https://t.me/ZG_Mine" target="_blank" rel="noreferrer" className="button-primary cc-black w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden">
-                  <span>Contact us</span>
-                </a>
               </div>
+            </div>
+          </div>
+        </header>
 
-              <div className="u-text-left" style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'left' }}>
-                <h3 className="heading-h6 u-text-color-dark" style={{ marginTop: '1.5rem', marginBottom: '0.75rem' }}>💼 WHAT WE OFFER</h3>
-                <ul className="text-lg u-text-color-dark" style={{ listStyle: 'none', padding: 0, marginBottom: '1.5rem' }}>
+        <div className="section-policy u-spacing-inline u-spacing-block">
+          <div className="container cc-738">
+            <div className="policy_content">
+              <div className="common-richtext w-richtext u-richtext">
+                <h2 className="heading-h4 u-text-color-dark u-text-center" style={{ marginBottom: '1rem' }}>For Media Buyers · Agencies · Affiliate Teams</h2>
+                <p className="text-xl u-text-color-dark" style={{ marginBottom: '2rem', textAlign: 'center' }}>
+                  We provide enterprise-grade virtual card infrastructure for high-volume advertising operations.
+                </p>
+
+                <h3 className="heading-h5 u-text-color-dark" style={{ marginTop: '2rem', marginBottom: '1rem' }}>💼 WHAT WE OFFER</h3>
+                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
                   <li>✔️ Virtual Cards for Ads (Facebook / Google / TikTok)</li>
                   <li>✔️ Instant funding via USDT (1:1 USD)</li>
                   <li>✔️ Unlimited card creation</li>
@@ -44,15 +51,15 @@ export default function ContactSection() {
                   <li>✔️ 24/7 support</li>
                 </ul>
 
-                <h3 className="heading-h6 u-text-color-dark" style={{ marginBottom: '0.75rem' }}>💰 FUNDING & COST</h3>
-                <ul className="text-lg u-text-color-dark" style={{ listStyle: 'none', padding: 0, marginBottom: '1.5rem' }}>
+                <h3 className="heading-h5 u-text-color-dark" style={{ marginBottom: '1rem' }}>💰 FUNDING & COST</h3>
+                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '1rem' }}>
                   <li>Funding: USDT → USD (1:1)</li>
                   <li>No hidden fees</li>
                   <li>No transaction fees</li>
                 </ul>
-                <p className="text-lg u-text-color-dark" style={{ marginBottom: '1.5rem' }}>👉 The only cost is opportunity-based (cashback model)</p>
+                <p className="text-lg u-text-color-dark" style={{ marginBottom: '2rem' }}>👉 The only cost is opportunity-based (cashback model)</p>
 
-                <h3 className="heading-h6 u-text-color-dark" style={{ marginBottom: '0.75rem' }}>🎯 VOLUME-BASED CASHBACK</h3>
+                <h3 className="heading-h5 u-text-color-dark" style={{ marginBottom: '1rem' }}>🎯 VOLUME-BASED CASHBACK</h3>
                 <p className="text-lg u-text-color-dark" style={{ marginBottom: '0.5rem' }}>The more you spend, the more you earn:</p>
                 <table className="text-lg u-text-color-dark" style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '1.5rem' }}>
                   <thead>
@@ -70,10 +77,10 @@ export default function ContactSection() {
                     <tr><td style={{ padding: '0.5rem' }}>$1M+</td><td style={{ padding: '0.5rem', textAlign: 'right' }}>0.6% – 0.8% (custom)</td></tr>
                   </tbody>
                 </table>
-                <p className="text-lg u-text-color-dark" style={{ marginBottom: '1.5rem' }}>👉 Designed for scaling teams and professional buyers.</p>
+                <p className="text-lg u-text-color-dark" style={{ marginBottom: '2rem' }}>👉 Designed for scaling teams and professional buyers.</p>
 
-                <h3 className="heading-h6 u-text-color-dark" style={{ marginBottom: '0.75rem' }}>⚡️ WHY CHOOSE US</h3>
-                <ul className="text-lg u-text-color-dark" style={{ listStyle: 'none', padding: 0, marginBottom: '1.5rem' }}>
+                <h3 className="heading-h5 u-text-color-dark" style={{ marginBottom: '1rem' }}>⚡️ WHY CHOOSE US</h3>
+                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
                   <li>✔️ We are active advertisers (internal spend ~$300K/month)</li>
                   <li>✔️ High approval rate for ad platforms</li>
                   <li>✔️ Stable infrastructure for scaling</li>
@@ -81,16 +88,16 @@ export default function ContactSection() {
                   <li>✔️ Flexible for agencies & teams</li>
                 </ul>
 
-                <h3 className="heading-h6 u-text-color-dark" style={{ marginBottom: '0.75rem' }}>🔐 SECURITY & STABILITY</h3>
-                <ul className="text-lg u-text-color-dark" style={{ listStyle: 'none', padding: 0, marginBottom: '1.5rem' }}>
+                <h3 className="heading-h5 u-text-color-dark" style={{ marginBottom: '1rem' }}>🔐 SECURITY & STABILITY</h3>
+                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
                   <li>✔️ Multi-BIN infrastructure</li>
                   <li>✔️ Real usage history cards</li>
                   <li>✔️ Risk monitoring system</li>
                   <li>✔️ Replacement support if needed</li>
                 </ul>
 
-                <h3 className="heading-h6 u-text-color-dark" style={{ marginBottom: '0.75rem' }}>🧩 SUPPORTED USE CASES</h3>
-                <ul className="text-lg u-text-color-dark" style={{ listStyle: 'none', padding: 0, marginBottom: '1.5rem' }}>
+                <h3 className="heading-h5 u-text-color-dark" style={{ marginBottom: '1rem' }}>🧩 SUPPORTED USE CASES</h3>
+                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
                   <li>✔️ Facebook Ads</li>
                   <li>✔️ Google Ads</li>
                   <li>✔️ TikTok Ads</li>
@@ -98,7 +105,7 @@ export default function ContactSection() {
                   <li>✔️ E-commerce</li>
                 </ul>
 
-                <h3 className="heading-h6 u-text-color-dark" style={{ marginBottom: '0.75rem' }}>❓ FREQUENTLY ASKED QUESTIONS</h3>
+                <h3 className="heading-h5 u-text-color-dark" style={{ marginBottom: '1rem' }}>❓ FREQUENTLY ASKED QUESTIONS</h3>
                 <div className="text-lg u-text-color-dark" style={{ marginBottom: '1rem' }}>
                   <p style={{ fontWeight: '600' }}>1. How fast is funding?</p>
                   <p>👉 Instant – typically within 1–5 minutes after USDT deposit.</p>
@@ -137,20 +144,20 @@ export default function ContactSection() {
                   <p style={{ fontWeight: '600' }}>9. Can agencies use this?</p>
                   <p>👉 Yes – we support teams, agencies, and affiliate networks.</p>
                 </div>
-                <div className="text-lg u-text-color-dark" style={{ marginBottom: '1.5rem' }}>
+                <div className="text-lg u-text-color-dark" style={{ marginBottom: '2rem' }}>
                   <p style={{ fontWeight: '600' }}>10. Do you offer better rates for large volume?</p>
                   <p>👉 Yes – custom cashback for high-volume partners.</p>
                 </div>
 
-                <h3 className="heading-h6 u-text-color-dark" style={{ marginBottom: '0.75rem' }}>📊 IDEAL CLIENTS</h3>
-                <ul className="text-lg u-text-color-dark" style={{ listStyle: 'none', padding: 0, marginBottom: '1.5rem' }}>
+                <h3 className="heading-h5 u-text-color-dark" style={{ marginBottom: '1rem' }}>📊 IDEAL CLIENTS</h3>
+                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
                   <li>✔️ Media Buyers</li>
                   <li>✔️ Affiliate Teams</li>
                   <li>✔️ Advertising Agencies</li>
                   <li>✔️ E-commerce Sellers</li>
                 </ul>
 
-                <h3 className="heading-h6 u-text-color-dark" style={{ marginBottom: '0.75rem' }}>📞 CONTACT</h3>
+                <h3 className="heading-h5 u-text-color-dark" style={{ marginBottom: '1rem' }}>📞 CONTACT</h3>
                 <p className="text-lg u-text-color-dark">
                   Telegram: <a href="https://t.me/ZG_Mine" target="_blank" rel="noreferrer" style={{ color: '#8C3CFC' }}>@ZG_Mine</a>
                 </p>
@@ -161,7 +168,10 @@ export default function ContactSection() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+
+        <CTASection />
+      </main>
+      <Footer />
+    </div>
   )
 }

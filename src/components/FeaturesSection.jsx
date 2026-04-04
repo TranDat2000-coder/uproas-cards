@@ -126,12 +126,12 @@ export default function FeaturesSection({ onOpenModal }) {
                 <span>Wide choice of&nbsp;&nbsp;</span><span className="u-color-primary">BINs</span>
               </h3>
               <div className="video-card_text cc-two text-xl">More than 50 reliable BINs minimize the risks associated with payments and ad account blocking.</div>
-              <a
-                // onClick={onOpenSignup}
+              <button
+                onClick={onOpenModal}
                 className="button-primary w-inline-block u-weight-500 u-position-relative u-stacking-context"
               >
                 <span>Open Account</span>
-              </a>
+              </button>
             </div>
             <video autoPlay loop muted playsInline className="video-element cc-desktop cc-last" poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/688cd50d3e1e36106c5ce041_video-poster-6.png.">
               <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4" type="video/mp4" src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4" />
@@ -213,7 +213,7 @@ export default function FeaturesSection({ onOpenModal }) {
               <h2 className="video-card_title heading-h6 u-color-typography-25" style={{ color: 'white' }}>Instant Issuance</h2>
               <div className="video-card_text text-xl">Generate cards instantly and run your advertising campaigns without delays or hassles.</div>
               <button
-                // onClick={onOpenSignup}
+                onClick={onOpenModal}
                 className="button-primary w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden">
                 <span>Open Account</span>
               </button>

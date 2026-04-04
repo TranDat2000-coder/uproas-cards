@@ -1,11 +1,11 @@
 const SOCIALS = [
   {
     href: 'https://www.linkedin.com/company/86950206/',
-    src: 'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b777db08479b8f4185_d01f97baa5835e76352c1d998ba9ee5b_Linkedin.webp',
+    src: 'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b777db08479b8f4185_d01f97baa5835e76352c1d998baa9ee5b_Linkedin.webp',
     alt: 'Linkedin',
   },
   {
-    href: 'https://www.instagram.com/leadingcards.media/', 
+    href: 'https://www.instagram.com/leadingcards.media/',
     src: 'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b7636f74b3000a1918_65d09cc111d93a99caa8d4eea3563dde_Instagram.webp',
     alt: 'Instagram',
   },
@@ -21,7 +21,7 @@ const SOCIALS = [
   },
 ]
 
-export default function CTASection() {
+export default function CTASection({ onOpenModal }) {
   return (
     <section className="section-cta u-spacing-inline">
       <div className="container">
@@ -37,6 +37,23 @@ export default function CTASection() {
           <h2 className="cta-card_title heading-h3">
             Unlock exclusive perks! Subscribe &amp; Supercharge your ad spend
           </h2>
+
+          {/* Open Account & Sign Up Buttons */}
+          <div className="u-display-flex u-justify-content-center" style={{ gap: '1rem', marginBottom: '2rem' }}>
+            <button
+              onClick={onOpenModal}
+              className="button-primary w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden"
+            >
+              <span>Open Account</span>
+            </button>
+            <button
+              onClick={onOpenModal}
+              className="button-primary cc-ghost w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden"
+            >
+              <span>Sign Up</span>
+            </button>
+          </div>
+
           <ul role="list" className="cta-card_list u-list-unstyled">
             {SOCIALS.map((s) => (
               <li key={s.alt}>

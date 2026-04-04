@@ -83,9 +83,9 @@ export default function Footer() {
                 <p>© UproasCards 2025</p>
                 <ul role="list" className="footer_top_list u-list-unstyled">
                   <li>
-                    <a href="/privacy-policy" className="footer_top_link w-inline-block">
+                    <Link to="/privacy-policy" className="footer_top_link w-inline-block">
                       <div className="navbar_link_text-wrap"><span className="navbar_link_text cc-footer">Privacy Policy</span></div>
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="/terms-conditions" className="footer_top_link w-inline-block">

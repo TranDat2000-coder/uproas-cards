@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import ContactSection from '../components/ContactSection'
 import CTASection from '../components/CTASection'
 import Footer from '../components/Footer'
 import FormModal from '../components/FormModal'
@@ -356,8 +355,7 @@ export default function PartnerPage() {
           </div>
         </section>
 
-        <ContactSection />
-        <CTASection />
+        <CTASection onOpenModal={handleOpenModal} />
       </main>
       <Footer />
       <FormModal isOpen={modalOpen} onClose={handleCloseModal} url={modalUrl} />

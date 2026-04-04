@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import ContactSection from './components/ContactSection'
 import CTASection from './components/CTASection'
 import FAQSection from './components/FAQSection'
 import FeaturesSection from './components/FeaturesSection'
@@ -17,6 +16,7 @@ import VideoCTA from './components/VideoCTA'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
 import PartnerPage from './pages/PartnerPage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 
 function SignupModal({ isOpen, onClose }) {
   if (!isOpen) return null
@@ -93,6 +93,12 @@ export default function App() {
           }
         />
         <Route
+          path="/privacy-policy"
+          element={
+            <PrivacyPolicyPage />
+          }
+        />
+        <Route
           path="/"
           element={
             <div className="page-wrapper">
@@ -106,7 +112,6 @@ export default function App() {
                 <VideoCTA onOpenSignup={handleOpenSignup} />
                 <ReviewsSection />
                 <FAQSection />
-                <ContactSection />
                 <CTASection />
               </main>
               <Footer />
