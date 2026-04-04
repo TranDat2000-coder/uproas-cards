@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 
-const LOGO_URL = 'https://images.typeform.com/images/Fm4bxZ9vc8Yw'
 const TELEGRAM_URL = 'https://t.me/telegram/ZG_Mine#'
 
 const spendOptions = [
@@ -104,11 +103,20 @@ export default function TypeformSignup() {
     >
       <div className="root-loader-inner">
         <div id="loader-logo" className="flex flex-col items-center">
-          <img
-            src={LOGO_URL}
-            alt="LeadingCards"
-            className="max-w-[120px]! max-h-[40px]! object-contain"
-          />
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="196" height="30" viewBox="0 0 196 30" fill="none" className="navbar_brand_logo" style={{ color: '#000000' }}>
+            <g>
+              <path d="M16.7093 22.9768L12.6585 15.9277L8.35278 8.42978L10.3781 4.90046L13.1948 -6.10352e-05L17.1032 6.80967L15.4752 9.64465L13.1948 5.67602L11.6122 8.42891L14.0228 12.6255L18.3372 20.1392H21.4936L19.6499 16.9164L21.2779 14.0814L26.3872 22.9776H16.7093V22.9768Z" fill="#8C3CFC" />
+              <path d="M-0.00012207 22.9768L6.78253 11.1696L8.41051 14.0045L6.95197 16.5487L4.8873 20.1357H11.9276L13.5591 22.9768H-0.00012207Z" fill="#8C3CFC" />
+            </g>
+            <text
+              x="30"
+              y="22"
+              font-size="28"
+              font-weight="500"
+              fill="currentColor"
+              letter-spacing="-0.2"
+            >UproasCards</text>
+          </svg>
         </div>
         <div id="loader-bar" className="mt-4">
           <div className="LoaderWrapper" style={{
@@ -179,11 +187,20 @@ export default function TypeformSignup() {
       `}
     >
       <div className="absolute top-4 left-4 md:left-8">
-        <img
-          src={LOGO_URL}
-          alt="LeadingCards"
-          className="!h-7 object-contain"
-        />
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="196" height="30" viewBox="0 0 196 30" fill="none" className="navbar_brand_logo" style={{ color: '#000000' }}>
+          <g>
+            <path d="M16.7093 22.9768L12.6585 15.9277L8.35278 8.42978L10.3781 4.90046L13.1948 -6.10352e-05L17.1032 6.80967L15.4752 9.64465L13.1948 5.67602L11.6122 8.42891L14.0228 12.6255L18.3372 20.1392H21.4936L19.6499 16.9164L21.2779 14.0814L26.3872 22.9776H16.7093V22.9768Z" fill="#8C3CFC" />
+            <path d="M-0.00012207 22.9768L6.78253 11.1696L8.41051 14.0045L6.95197 16.5487L4.8873 20.1357H11.9276L13.5591 22.9768H-0.00012207Z" fill="#8C3CFC" />
+          </g>
+          <text
+            x="30"
+            y="22"
+            font-size="28"
+            font-weight="500"
+            fill="currentColor"
+            letter-spacing="-0.2"
+          >UproasCards</text>
+        </svg>
       </div>
 
       <div className="flex flex-col items-center text-center max-w-lg mx-auto pt-16">
@@ -226,11 +243,20 @@ export default function TypeformSignup() {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-white px-6 py-8">
         <div className="absolute top-4 left-4 md:left-8">
-          <img
-            src={LOGO_URL}
-            alt="LeadingCards"
-            className="!h-7 object-contain"
-          />
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="196" height="30" viewBox="0 0 196 30" fill="none" className="navbar_brand_logo" style={{ color: '#000000' }}>
+            <g>
+              <path d="M16.7093 22.9768L12.6585 15.9277L8.35278 8.42978L10.3781 4.90046L13.1948 -6.10352e-05L17.1032 6.80967L15.4752 9.64465L13.1948 5.67602L11.6122 8.42891L14.0228 12.6255L18.3372 20.1392H21.4936L19.6499 16.9164L21.2779 14.0814L26.3872 22.9776H16.7093V22.9768Z" fill="#8C3CFC" />
+              <path d="M-0.00012207 22.9768L6.78253 11.1696L8.41051 14.0045L6.95197 16.5487L4.8873 20.1357H11.9276L13.5591 22.9768H-0.00012207Z" fill="#8C3CFC" />
+            </g>
+            <text
+              x="30"
+              y="22"
+              font-size="28"
+              font-weight="500"
+              fill="currentColor"
+              letter-spacing="-0.2"
+            >UproasCards</text>
+          </svg>
         </div>
 
         <div className="w-full max-w-lg mx-auto pt-12">
@@ -359,11 +385,20 @@ export default function TypeformSignup() {
   const renderThankYouScreen = () => (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white px-6 py-8">
       <div className="absolute top-4 left-4 md:left-8">
-        <img
-          src={LOGO_URL}
-          alt="LeadingCards"
-          className="!h-7 object-contain"
-        />
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="196" height="30" viewBox="0 0 196 30" fill="none" className="navbar_brand_logo" style={{ color: '#000000' }}>
+          <g>
+            <path d="M16.7093 22.9768L12.6585 15.9277L8.35278 8.42978L10.3781 4.90046L13.1948 -6.10352e-05L17.1032 6.80967L15.4752 9.64465L13.1948 5.67602L11.6122 8.42891L14.0228 12.6255L18.3372 20.1392H21.4936L19.6499 16.9164L21.2779 14.0814L26.3872 22.9776H16.7093V22.9768Z" fill="#8C3CFC" />
+            <path d="M-0.00012207 22.9768L6.78253 11.1696L8.41051 14.0045L6.95197 16.5487L4.8873 20.1357H11.9276L13.5591 22.9768H-0.00012207Z" fill="#8C3CFC" />
+          </g>
+          <text
+            x="30"
+            y="22"
+            font-size="28"
+            font-weight="500"
+            fill="currentColor"
+            letter-spacing="-0.2"
+          >UproasCards</text>
+        </svg>
       </div>
 
       <div className="flex flex-col items-center text-center max-w-lg mx-auto pt-12 animate-slideIn">
@@ -379,7 +414,7 @@ export default function TypeformSignup() {
           className="bg-[#8C3CFC] text-white px-10 py-4 rounded-full text-base font-medium hover:bg-[#7529e6] transition-colors inline-flex items-center gap-2 mb-6"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
           </svg>
           Activate via Telegram
         </a>

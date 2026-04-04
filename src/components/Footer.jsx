@@ -34,7 +34,21 @@ export default function Footer() {
             <div className="container cc-940">
               <div className="footer_top">
                 <Link to="/" className="w-inline-block w--current">
-                  <img src="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/682e3a1ae025d0ef9838436b_leading-cards.svg" loading="lazy" width="196" height="30" alt="Leading Cards" />
+                  {/* <img src="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/682e3a1ae025d0ef9838436b_leading-cards.svg" loading="lazy" width="196" height="30" alt="Leading Cards" /> */}
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="196" height="30" viewBox="0 0 196 30" fill="none" className="navbar_brand_logo" style={{ color: '#000000' }}>
+                    <g>
+                      <path d="M16.7093 22.9768L12.6585 15.9277L8.35278 8.42978L10.3781 4.90046L13.1948 -6.10352e-05L17.1032 6.80967L15.4752 9.64465L13.1948 5.67602L11.6122 8.42891L14.0228 12.6255L18.3372 20.1392H21.4936L19.6499 16.9164L21.2779 14.0814L26.3872 22.9776H16.7093V22.9768Z" fill="#8C3CFC" />
+                      <path d="M-0.00012207 22.9768L6.78253 11.1696L8.41051 14.0045L6.95197 16.5487L4.8873 20.1357H11.9276L13.5591 22.9768H-0.00012207Z" fill="#8C3CFC" />
+                    </g>
+                    <text
+                      x="30"
+                      y="22"
+                      font-size="28"
+                      font-weight="500"
+                      fill="currentColor"
+                      letter-spacing="-0.2"
+                    >UproasCards</text>
+                  </svg>
                 </Link>
                 <ul role="list" className="footer_top_list u-list-unstyled">
                   <li>

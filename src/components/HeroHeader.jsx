@@ -2,11 +2,12 @@ import { useEffect, useRef } from 'react'
 
 const TYPEFORM_URL = 'https://form.typeform.com/to/e4ZYOiQe'
 const CARD_IMAGES = [
-  'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/689330c8fd8f2eeb6154bbac_525d605c505a91fa9f2d57ce0a0d52d4_Banking-Card-1.svg',
-  'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/689330c82264f671e2d68543_8d9c869d3487ac68f621ac1e3bbd90f0_Banking-Card-2.svg',
-  'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/689330c8e3f9b78a8e4f263f_8f1fae3e6e1fd66742b1ccecff921674_Banking-Card-3.svg',
-  'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/689330c8458799b8a0942260_bd7b49f743e8ec6b079ea9f6bcf0441c_Banking-Card-4.svg',
+  'src/img/Banking-1.svg',
+  'src/img/Banking-2.svg',
+  'src/img/Banking-3.1.svg',
+  'src/img/Banking-4.1.svg',
 ]
+
 
 export default function HeroHeader({ onOpenSignup }) {
   const sliderRef = useRef(null)

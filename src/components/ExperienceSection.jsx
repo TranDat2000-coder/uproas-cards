@@ -18,9 +18,12 @@ export default function ExperienceSection() {
         {/* Large Video Card - CC SIX */}
         <div className="video-card mb-8">
           <div className="video-card_inner cc-six u-position-relative u-overflow-hidden" style={{ display: 'flex', flexDirection: 'row', minHeight: '480px', borderRadius: '20px', overflow: 'hidden', background: '#fff', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)' }}>
-            <div className="video-card_content" style={{ flex: '0 0 40%', padding: '3rem 2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div className="video-card_content"
+              style={{ flex: '0 0 40%', padding: '3rem 2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <img src="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/688cdcab58a7b9b6498761da_wide-choice-of-BINs-icon.svg" loading="lazy" alt="" style={{ width: '56px', height: '56px', marginBottom: '1.5rem' }} />
-              <h3 className="video-card_title cc-small heading-h6 u-text-color-dark" style={{ fontSize: '1.625rem', lineHeight: '1.3', marginBottom: '1rem', color: '#1a1a1a' }}>
+              <h3 className="video-card_title cc-small heading-h6 u-text-color-dark"
+                style={{ fontSize: '1.625rem', lineHeight: '1.3', marginBottom: '1rem', color: '#1a1a1a' }}
+              >
                 <span>Wide choice of&nbsp;&nbsp;</span>
                 <span className="u-color-primary">BINs</span>
               </h3>
@@ -33,7 +36,10 @@ export default function ExperienceSection() {
                 </a>
               </div>
             </div>
-            <video autoPlay loop muted playsInline className="video-element cc-desktop cc-last" poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/688cd50d3e1e36106c5ce041_video-poster-6.png." style={{ flex: '0 0 60%', width: '60%', height: 'auto', minHeight: '480px', objectFit: 'cover' }}>
+            <video autoPlay loop muted playsInline
+              className="video-element cc-desktop cc-last"
+              poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/688cd50d3e1e36106c5ce041_video-poster-6.png."
+              style={{ flex: '0 0 60%', width: '60%', height: 'auto', minHeight: '480px', objectFit: 'cover' }}>
               <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4" type="video/mp4" src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4" />
               <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm&quot;" type="video/webm" src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm&quot;" />
             </video>
