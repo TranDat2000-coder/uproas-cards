@@ -14,6 +14,16 @@ export default function Navbar({ onOpenModal, onOpenSignup }) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Body scroll lock when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.classList.add('no-scroll')
+    } else {
+      document.body.classList.remove('no-scroll')
+    }
+    return () => document.body.classList.remove('no-scroll')
+  }, [mobileOpen])
+
   return (
     <div
       data-animation="default"
@@ -22,50 +32,16 @@ export default function Navbar({ onOpenModal, onOpenSignup }) {
       data-easing="ease"
       data-easing2="ease"
       role="banner"
-      className={`navbar w-nav u-spacing-inline u-width-full  u-position-absolute${scrolled ? ' cc-bg' : ''}`}
+      className={`navbar w-nav u-spacing-inline u-width-full u-position-absolute${scrolled ? ' cc-bg' : ''}`}
     >
       <div className="container cc-1136">
         <div className="navbar_wrapper">
           <div className="navbar_inner">
-            <nav role="navigation" className="navbar_nav w-nav-menu">
-              <ul role="list" className="navbar_nav_list u-list-unstyled">
-                <li>
-                  <Link to="/partner" className="navbar_nav_link w-inline-block">
-                    <div className="navbar_link_text-wrap">
-                      <span className="navbar_link_text">Our Partners</span>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/blog" className="navbar_nav_link w-inline-block">
-                    <div className="navbar_link_text-wrap">
-                      <span className="navbar_link_text">Blog</span>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <a href="#section-contact" className="navbar_nav_link w-inline-block">
-                    <div className="navbar_link_text-wrap">
-                      <span className="navbar_link_text">Contact us</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <div className="navbar_nav_buttons u-hide-desktop">
-                <a href="https://t.me/telegram/ZG_Mine" className="button-primary cc-secondary cc-nav w-inline-block">
-                  <span>Sign in</span>
-                </a>
-                <button
-                  onClick={onOpenSignup}
-                  className="button-primary cc-ghost cc-nav w-inline-block"
-                >
-                  <span>Sign up</span>
-                </button>
-              </div>
-            </nav>
+            {/* Brand/Logo - FIRST child to match original HTML */}
             <Link
               to="/"
               aria-label="Leading Card"
+              id="w-node-_8d013b26-2e9b-e72a-1ab7-707d68aae2fb-68aae2d4"
               className="navbar_brand w-inline-block w--current"
             >
               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="196" height="30" viewBox="0 0 196 30" fill="none" className="navbar_brand_logo">
@@ -76,13 +52,15 @@ export default function Navbar({ onOpenModal, onOpenSignup }) {
                 <text
                   x="30"
                   y="22"
-                  font-size="28"
-                  font-weight="500"
+                  fontSize="28"
+                  fontWeight="500"
                   fill="currentColor"
-                  letter-spacing="-0.2"
+                  letterSpacing="-0.2"
                 >UproasCards</text>
               </svg>
             </Link>
+
+            {/* Mobile buttons - hamburger + sign in/up */}
             <div className="navbar_nav_buttons cc-mobile">
               <div
                 className={`navbar_menu-icon w-nav-button${mobileOpen ? ' w--open' : ''}`}
@@ -90,6 +68,8 @@ export default function Navbar({ onOpenModal, onOpenSignup }) {
                 aria-label="menu"
                 role="button"
                 tabIndex={0}
+                aria-controls="w-nav-overlay-0"
+                aria-haspopup="menu"
                 aria-expanded={mobileOpen}
                 onClick={() => setMobileOpen(!mobileOpen)}
                 onKeyDown={(e) => e.key === 'Enter' && setMobileOpen(!mobileOpen)}
@@ -114,32 +94,52 @@ export default function Navbar({ onOpenModal, onOpenSignup }) {
           </div>
         </div>
       </div>
-      <div className="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0">
-        {mobileOpen && (
-          <nav role="navigation" className="navbar_nav w-nav-menu w--open" style={{ transform: 'translateY(0px)', transition: 'transform 400ms ease 0s' }}>
-            <ul role="list" className="navbar_nav_list u-list-unstyled">
-              <li>
-                <Link to="/partner" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
-                  <div className="navbar_link_text-wrap"><span className="navbar_link_text">Our Partners</span></div>
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
-                  <div className="navbar_link_text-wrap"><span className="navbar_link_text">Blog</span></div>
-                </Link>
-              </li>
-              <li>
-                <a href="#section-contact" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
-                  <div className="navbar_link_text-wrap"><span className="navbar_link_text">Contact us</span></div>
-                </a>
-              </li>
-            </ul>
-            <div className="navbar_nav_buttons u-hide-desktop">
-              <a href="https://t.me/telegram/ZG_Mine#" className="button-primary cc-secondary cc-nav w-inline-block"><span>Sign in</span></a>
-              <button onClick={() => { setMobileOpen(false); onOpenSignup(); }} className="button-primary cc-ghost cc-nav w-inline-block"><span>Sign up</span></button>
-            </div>
-          </nav>
-        )}
+
+      {/* Mobile overlay - always rendered, toggled via styles */}
+      <div
+        className="w-nav-overlay"
+        data-wf-ignore=""
+        id="w-nav-overlay-0"
+        style={mobileOpen ? { height: '100vh', display: 'block' } : {}}
+      >
+        <nav
+          role="navigation"
+          className={`navbar_nav w-nav-menu${mobileOpen ? '' : ''}`}
+          {...(mobileOpen ? { 'data-nav-menu-open': '' } : {})}
+          style={{
+            transform: mobileOpen ? 'translateY(0px)' : 'translateY(-100%)',
+            transition: 'all, transform 400ms',
+          }}
+        >
+          <ul role="list" className="navbar_nav_list u-list-unstyled">
+            <li>
+              <Link to="/partner" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
+                <div className="navbar_link_text-wrap"><span className="navbar_link_text">Our Partners</span></div>
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
+                <div className="navbar_link_text-wrap"><span className="navbar_link_text">Blog</span></div>
+              </Link>
+            </li>
+            <li>
+              <a href="#section-contact" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
+                <div className="navbar_link_text-wrap"><span className="navbar_link_text">Contact us</span></div>
+              </a>
+            </li>
+          </ul>
+          <div className="navbar_nav_buttons u-hide-desktop">
+            <a href="https://t.me/telegram/ZG_Mine#" className="button-primary cc-secondary cc-nav w-inline-block">
+              <span>Sign in</span>
+            </a>
+            <button
+              onClick={() => { setMobileOpen(false); onOpenSignup(); }}
+              className="button-primary cc-ghost cc-nav w-inline-block"
+            >
+              <span>Sign up</span>
+            </button>
+          </div>
+        </nav>
       </div>
     </div>
   )
