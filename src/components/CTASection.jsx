@@ -5,17 +5,17 @@ const SOCIALS = [
     alt: 'Linkedin',
   },
   {
-    href: 'https://www.instagram.com/leadingcards.media/',
+    href: 'https://www.instagram.com/leadingcards.media/', 
     src: 'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b7636f74b3000a1918_65d09cc111d93a99caa8d4eea3563dde_Instagram.webp',
     alt: 'Instagram',
   },
   {
-    href: 'https://www.facebook.com/LeadingCards?locale=uk_UA',
+    href: 'https://www.facebook.com/Uproa?locale=uk_UA',
     src: 'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b78ea1c5e76e3c80f8_d757c96766c3ea81857622f3487cf577_Facebook.webp',
     alt: 'Facebook',
   },
   {
-    href: 'https://t.me/+qXQldWDNab0yNWJi',
+    href: 'https://t.me/telegram/ZG_Mine#',
     src: 'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b7763790da7eabc642_eefeb9a88ac35b1d5cf67d3d97c96b87_Telegram.webp',
     alt: 'Telegram',
   },

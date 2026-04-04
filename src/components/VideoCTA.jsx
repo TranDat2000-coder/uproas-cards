@@ -1,6 +1,4 @@
-const TYPEFORM_URL = 'https://form.typeform.com/to/e4ZYOiQe'
-
-export default function VideoCTA({ onOpenModal }) {
+export default function VideoCTA({ onOpenSignup }) {
   return (
     <section className="section-video-cta u-spacing-inline u-spacing-block cc-bottom-0">
       <div className="container">
@@ -9,13 +7,12 @@ export default function VideoCTA({ onOpenModal }) {
             <h2 className="video-cta-card_title u-color-typography-25 heading-h4">
               Ready to power up your media buying? Let's make it happen!
             </h2>
-            <a
-              href={TYPEFORM_URL}
-              onClick={(e) => { e.preventDefault(); onOpenModal(TYPEFORM_URL) }}
+            <button
+              onClick={onOpenSignup}
               className="button-primary w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden"
             >
               <span>Open Account</span>
-            </a>
+            </button>
           </div>
           <img
             className="u-cover u-z-n1"
@@ -37,8 +34,8 @@ export default function VideoCTA({ onOpenModal }) {
             poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/68905caad965015d4e8e0c95_Cards%20for%20ads%C2%A0.jpg"
             className="u-cover u-z-n1 lazy"
           >
-            <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F6825675b1e23d6f431d2a158_3d%20cards%20%282%29-transcode.mp4" type="video/mp4" />
-            <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F6825675b1e23d6f431d2a158_3d%20cards%20%282%29-transcode.webm" type="video/webm" />
+            <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F6825675b1e23d6f431d2a158_3d%20cards%20%282%29-transcode.mp4" type="video/mp4" />
+            <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F6825675b1e23d6f431d2a158_3d%20cards%20%282%29-transcode.webm" type="video/webm" />
           </video>
         </div>
       </div>

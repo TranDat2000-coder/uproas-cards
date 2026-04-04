@@ -8,7 +8,7 @@ const CARD_IMAGES = [
   'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/689330c8458799b8a0942260_bd7b49f743e8ec6b079ea9f6bcf0441c_Banking-Card-4.svg',
 ]
 
-export default function HeroHeader({ onOpenModal }) {
+export default function HeroHeader({ onOpenSignup }) {
   const sliderRef = useRef(null)
 
   useEffect(() => {
@@ -85,13 +85,12 @@ export default function HeroHeader({ onOpenModal }) {
               <p className="home-header_description text-xl u-color-typography-50">
                 Our cards work flawlessly with major advertising platforms, ensuring uninterrupted ad spend
               </p>
-              <a
-                href={TYPEFORM_URL}
-                onClick={(e) => { e.preventDefault(); onOpenModal(TYPEFORM_URL) }}
+              <button
+                onClick={onOpenSignup}
                 className="button-primary w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden"
               >
                 <span>Open Account</span>
-              </a>
+              </button>
               <div className="home-header_social u-display-grid">
                 <img
                   src="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/68bea08e6450f4d17d1e6560_Socialist-logo.svg"

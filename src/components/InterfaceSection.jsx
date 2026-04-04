@@ -37,8 +37,8 @@ export default function InterfaceSection() {
             poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/687a76b594a0b2203346fdeb_team-Interface-poster.png"
             className="u-cover lazy"
           >
-            <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F685389b4a427b7743f79473a_add%20team%20member%20video%20for%20website%20%281%29-transcode.mp4" type="video/mp4" />
-            <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F685389b4a427b7743f79473a_add%20team%20member%20video%20for%20website%20%281%29-transcode.webm" type="video/webm" />
+            <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F685389b4a427b7743f79473a_add%20team%20member%20video%20for%20website%20%281%29-transcode.mp4" type="video/mp4" />
+            <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F685389b4a427b7743f79473a_add%20team%20member%20video%20for%20website%20%281%29-transcode.webm" type="video/webm" />
           </video>
         </div>
       </div>

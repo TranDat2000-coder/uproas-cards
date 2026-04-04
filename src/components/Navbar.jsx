@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
-const TYPEFORM_URL = 'https://form.typeform.com/to/e4ZYOiQe'
-
-export default function Navbar({ onOpenModal }) {
+export default function Navbar({ onOpenModal, onOpenSignup }) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
@@ -23,7 +22,7 @@ export default function Navbar({ onOpenModal }) {
       data-easing="ease"
       data-easing2="ease"
       role="banner"
-      className={`navbar w-nav u-spacing-inline u-width-full u-position-absolute${scrolled ? ' cc-bg' : ''}`}
+      className={`navbar w-nav u-spacing-inline u-width-full  u-position-absolute${scrolled ? ' cc-bg' : ''}`}
     >
       <div className="container cc-1136">
         <div className="navbar_wrapper">
@@ -31,18 +30,18 @@ export default function Navbar({ onOpenModal }) {
             <nav role="navigation" className="navbar_nav w-nav-menu">
               <ul role="list" className="navbar_nav_list u-list-unstyled">
                 <li>
-                  <a href="/partner" className="navbar_nav_link w-inline-block">
+                  <Link to="/partner" className="navbar_nav_link w-inline-block">
                     <div className="navbar_link_text-wrap">
                       <span className="navbar_link_text">Our Partners</span>
                     </div>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/blog" className="navbar_nav_link w-inline-block">
+                  <Link to="/blog" className="navbar_nav_link w-inline-block">
                     <div className="navbar_link_text-wrap">
                       <span className="navbar_link_text">Blog</span>
                     </div>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#section-contact" className="navbar_nav_link w-inline-block">
@@ -53,23 +52,20 @@ export default function Navbar({ onOpenModal }) {
                 </li>
               </ul>
               <div className="navbar_nav_buttons u-hide-desktop">
-                <a href="https://app.leadingcards.media/auth/login" className="button-primary cc-secondary cc-nav w-inline-block">
+                <a href="https://t.me/telegram/ZG_Mine" className="button-primary cc-secondary cc-nav w-inline-block">
                   <span>Sign in</span>
                 </a>
-                <a
-                  href={TYPEFORM_URL}
-                  target="_blank"
-                  rel="noreferrer"
-                  onClick={(e) => { e.preventDefault(); onOpenModal(TYPEFORM_URL) }}
+                <button
+                  onClick={onOpenSignup}
                   className="button-primary cc-ghost cc-nav w-inline-block"
                 >
                   <span>Sign up</span>
-                </a>
+                </button>
               </div>
             </nav>
-            <a
+            <Link
+              to="/"
               aria-label="Leading Card"
-              href="/"
               className="navbar_brand w-inline-block w--current"
             >
               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="196" height="30" viewBox="0 0 196 30" fill="none" className="navbar_brand_logo">
@@ -92,7 +88,7 @@ export default function Navbar({ onOpenModal }) {
                   <path d="M189.749 23.1602C186.07 23.1602 183.616 21.4912 183.207 18.7653H186.137C186.501 20.209 187.854 21.0859 189.778 21.0859C192.671 21.0859 192.984 19.5584 192.984 18.9007C192.984 17.223 191.649 17.0361 189.438 16.726L189.18 16.6893C187.737 16.5103 186.118 16.2369 184.998 15.56C183.956 14.9303 183.47 14.022 183.47 12.7006C183.47 11.3792 184.004 10.2001 185.014 9.37653C186.057 8.52499 187.527 8.0752 189.263 8.0752H189.344C191.222 8.0752 192.81 8.50577 193.942 9.32063C194.905 10.0141 195.509 10.9792 195.709 12.1347H192.757C192.418 10.8953 191.187 10.1189 189.491 10.1189C187.614 10.1189 186.4 10.9521 186.4 12.243C186.4 12.9984 186.788 13.5329 187.553 13.8334C188.152 14.0683 188.969 14.1731 190.004 14.3059L190.22 14.3338C193.788 14.7199 196.001 15.5618 196.001 18.5645C196.001 19.9086 195.422 21.0518 194.327 21.8693C193.198 22.713 191.615 23.1593 189.751 23.1593L189.749 23.1602Z" fill="currentColor" />
                 </g>
               </svg>
-            </a>
+            </Link>
             <div className="navbar_nav_buttons cc-mobile">
               <div
                 className={`navbar_menu-icon w-nav-button${mobileOpen ? ' w--open' : ''}`}
@@ -111,18 +107,15 @@ export default function Navbar({ onOpenModal }) {
                   className="u-select-none"
                 />
               </div>
-              <a href="https://app.leadingcards.media/auth/login" className="button-primary cc-secondary u-hide-tablet w-inline-block">
+              <a href="https://t.me/telegram/ZG_Mine#" className="button-primary cc-secondary u-hide-tablet w-inline-block">
                 <span>Sign in</span>
               </a>
-              <a
-                href={TYPEFORM_URL}
-                target="_blank"
-                rel="noreferrer"
-                onClick={(e) => { e.preventDefault(); onOpenModal(TYPEFORM_URL) }}
+              <button
+                onClick={onOpenSignup}
                 className="button-primary cc-ghost u-hide-tablet w-inline-block"
               >
                 <span>Sign up</span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -132,14 +125,14 @@ export default function Navbar({ onOpenModal }) {
           <nav role="navigation" className="navbar_nav w-nav-menu w--open" style={{ transform: 'translateY(0px)', transition: 'transform 400ms ease 0s' }}>
             <ul role="list" className="navbar_nav_list u-list-unstyled">
               <li>
-                <a href="/partner" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
+                <Link to="/partner" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
                   <div className="navbar_link_text-wrap"><span className="navbar_link_text">Our Partners</span></div>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
+                <Link to="/blog" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
                   <div className="navbar_link_text-wrap"><span className="navbar_link_text">Blog</span></div>
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#section-contact" className="navbar_nav_link w-inline-block" onClick={() => setMobileOpen(false)}>
@@ -148,8 +141,8 @@ export default function Navbar({ onOpenModal }) {
               </li>
             </ul>
             <div className="navbar_nav_buttons u-hide-desktop">
-              <a href="https://app.leadingcards.media/auth/login" className="button-primary cc-secondary cc-nav w-inline-block"><span>Sign in</span></a>
-              <a href={TYPEFORM_URL} target="_blank" rel="noreferrer" onClick={(e) => { e.preventDefault(); onOpenModal(TYPEFORM_URL); setMobileOpen(false) }} className="button-primary cc-ghost cc-nav w-inline-block"><span>Sign up</span></a>
+              <a href="https://t.me/telegram/ZG_Mine#" className="button-primary cc-secondary cc-nav w-inline-block"><span>Sign in</span></a>
+              <button onClick={() => { setMobileOpen(false); onOpenSignup(); }} className="button-primary cc-ghost cc-nav w-inline-block"><span>Sign up</span></button>
             </div>
           </nav>
         )}

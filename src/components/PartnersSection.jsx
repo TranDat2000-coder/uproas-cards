@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const PARTNERS = [
   {
@@ -84,7 +85,7 @@ const PARTNERS = [
     id: 9,
     logo: 'https://cdn.prod.website-files.com/686cbaeec5641801a89078e7/68a5b45cd8e8fe9909f77263_Partner-admobispy-logo.png',
     popupLogo: 'https://cdn.prod.website-files.com/686cbaeec5641801a89078e7/68a5b468a64388e37af3b102_Popup-magid-admobispy-logo.png',
-    promo: 'LeadingCards',
+    promo: 'UproasCards',
     promoNote: '-30% OFF: powerful analysis competitors ads',
     url: 'https://admobispy.com/login',
     desc: `<p>Admobispy it's a tool for monitoring and analyzing mobile advertising.</p>
@@ -95,7 +96,7 @@ const PARTNERS = [
     id: 8,
     logo: 'https://cdn.prod.website-files.com/686cbaeec5641801a89078e7/68a5b4121d1acee0832f108f_Partner-primeads-logo.png',
     popupLogo: 'https://cdn.prod.website-files.com/686cbaeec5641801a89078e7/68a5b41f4600b3080cb5ee78_Popup-magid-primeads-logo.png',
-    promo: 'LeadingCards',
+    promo: 'UproasCards',
     promoNote: 'to get +25% to your commission in the exclusive PrimeXBT revenue share offer',
     url: 'https://primeads.io/',
     desc: `<p>Global Affiliate Network for web 3.0 and crypto projects.</p>
@@ -120,7 +121,7 @@ export default function PartnersSection() {
             </h2>
           </div>
           <p className="section-text heading-s2 u-text-center u-weight-500" style={{ maxWidth: '52ch' }}>
-            LeadingCards clients get more — our partners have lined up sweet deals for you. Trusted by the best in the niche!
+            UproasCards clients get more — our partners have lined up sweet deals for you. Trusted by the best in the niche!
           </p>
         </div>
 
@@ -132,6 +133,7 @@ export default function PartnersSection() {
                   data-id={partner.id}
                   className="partner-card cc-white"
                   onClick={() => setActivePartner(activePartner === partner.id ? null : partner.id)}
+                  style={{ borderRadius: '20px', overflow: 'hidden' }}
                 >
                   <img src={partner.logo} loading="lazy" alt="" className="partners_logo u-select-none" />
                 </button>
@@ -166,9 +168,9 @@ export default function PartnersSection() {
         </div>
 
         <div className="partners_all-button u-display-flex">
-          <a href="/partner" className="button-primary cc-black w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden">
+          <Link to="/partner" className="button-primary cc-black w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden">
             <span>More Partners</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

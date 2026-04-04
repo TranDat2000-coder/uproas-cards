@@ -17,11 +17,11 @@ export default function ContactSection() {
                   <a href="https://api.whatsapp.com/send/?phone=15144189871&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer" className="cta-card_social-link w-inline-block">
                     <img src="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6870f982cae6ccbecd8ee47c_5925c14028572738b729b63f767dfff1_WhatsApp-icon.png" loading="lazy" alt="Whatsapp icon" />
                   </a>
-                  <a href="https://t.me/LeadingCards" target="_blank" rel="noreferrer" className="cta-card_social-link w-inline-block">
+                  <a href="https://t.me/telegram/ZG_Mine#" target="_blank" rel="noreferrer" className="cta-card_social-link w-inline-block">
                     <img src="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b7763790da7eabc642_eefeb9a88ac35b1d5cf67d3d97c96b87_Telegram.webp" loading="lazy" alt="Telegram" />
                   </a>
                 </div>
-                <a href="https://t.me/m/Krq-iPe7OWVk" target="_blank" rel="noreferrer" className="button-primary cc-black w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden">
+                <a href="https://t.me/telegram/ZG_Mine#" target="_blank" rel="noreferrer" className="button-primary cc-black w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden">
                   <span>Contact us</span>
                 </a>
               </div>
