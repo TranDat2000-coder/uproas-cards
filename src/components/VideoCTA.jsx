@@ -34,7 +34,7 @@ export default function VideoCTA({ onOpenSignup }) {
             poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/68905caad965015d4e8e0c95_Cards%20for%20ads%C2%A0.jpg"
             className="u-cover u-z-n1 lazy"
           >
-            <source src="public/Coins_run_up_202604042159.mp4" type="video/mp4" />
+            <source src="/Coins_run_up_202604042159.mp4" type="video/mp4" />
             <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F6825675b1e23d6f431d2a158_3d%20cards%20%282%29-transcode.webm" type="video/webm" />
           </video>
         </div>
