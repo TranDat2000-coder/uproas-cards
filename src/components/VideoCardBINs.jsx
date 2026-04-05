@@ -37,12 +37,12 @@ const VideoCardBINs = () => {
           <source
             data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4"
             type="video/mp4"
-            src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4"
+            src="public/Card_popup_bottom_202604042309.mp4"
           />
           <source
             data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm"
             type="video/webm"
-            src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm"
+            src="public/Card_popup_bottom_202604042309.mp4"
           />
         </video>
 
@@ -55,7 +55,7 @@ const VideoCardBINs = () => {
           poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/68b94e4d516ea438fbb2fe65_mobile-view-poster-for-video-six.png"
         >
           <source
-            data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.mp4"
+            data-src="public/Card_popup_bottom_202604042309.mp4"
             type="video/mp4"
           />
           <source

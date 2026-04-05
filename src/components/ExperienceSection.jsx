@@ -27,11 +27,12 @@ export default function ExperienceSection() {
                 <span>Wide choice of&nbsp;&nbsp;</span>
                 <span className="u-color-primary">BINs</span>
               </h3>
-              <div className="video-card_text cc-two text-xl" style={{ fontSize: '1rem', lineHeight: '1.6', color: '#666', marginBottom: '0' }}>
+              <div className="video-card_text video-card_text_111 cc-two text-xl" style={{ fontSize: '1rem', lineHeight: '1.6', color: '#666', marginBottom: '0' }}>
                 More than 50 reliable BINs minimize the risks associated with payments and ad account blocking.
               </div>
               <div className="button-wrapper" style={{ marginTop: '1.5rem' }}>
-                <a data-trigger="form-modal-open" href="https://form.typeform.com/to/e4ZYOiQe" className="button-primary w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden" style={{ display: 'inline-block', padding: '0.875rem 2rem', fontSize: '0.9375rem', fontWeight: '500', background: '#8c3cfc', color: 'white', borderRadius: '9999px', textDecoration: 'none' }}>
+                <a data-trigger="form-modal-open" href="https://form.typeform.com/to/e4ZYOiQe"
+                  className="button-primary w-inline-block u-weight-500 u-position-relative u-stacking-context u-overflow-hidden" style={{ display: 'inline-block', padding: '0.875rem 2rem', fontSize: '0.9375rem', fontWeight: '500', background: '#8c3cfc', color: 'white', borderRadius: '9999px', textDecoration: 'none' }}>
                   <span>Open Account</span>
                 </a>
               </div>
@@ -40,8 +41,10 @@ export default function ExperienceSection() {
               className="video-element cc-desktop cc-last"
               poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/688cd50d3e1e36106c5ce041_video-poster-6.png."
               style={{ flex: '0 0 60%', width: '60%', height: 'auto', minHeight: '480px', objectFit: 'cover' }}>
-              <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4" type="video/mp4" src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4" />
-              <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm&quot;" type="video/webm" src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm&quot;" />
+              <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4" type="video/mp4"
+                src="public/Card_popup_bottom_202604042309.mp4" />
+              <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm&quot;" type="video/webm"
+                src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm&quot;" />
             </video>
             <video autoPlay loop muted playsInline className="video-element cc-mobile lazy" poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/68b94e4d516ea438fbb2fe65_mobile-view-poster-for-video-six.png" style={{ display: 'none' }}>
               <source data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.mp4" type="video/mp4" />

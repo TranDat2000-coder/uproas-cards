@@ -24,7 +24,9 @@ export default function FeaturesSection({ onOpenSignup }) {
               <h3 className="video-card_title cc-small heading-h6 u-text-color-dark">
                 <span>Wide choice of&nbsp;&nbsp;</span><span className="u-color-primary">BINs</span>
               </h3>
-              <div className="video-card_text cc-two text-xl">More than 50 reliable BINs minimize the risks associated with payments and ad account blocking.</div>
+              <div className="video-card_text video-card_text_111 cc-two text-xl">
+                More than 50 reliable BINs minimize the risks associated with payments and ad account blocking.
+              </div>
               <div className="button-wrapper">
                 <a
                   data-trigger="form-modal-open"
@@ -37,12 +39,16 @@ export default function FeaturesSection({ onOpenSignup }) {
               </div>
             </div>
             <video autoPlay loop muted playsInline className="video-element cc-desktop cc-last lazy" poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/688cd50d3e1e36106c5ce041_video-poster-6.png.">
-              <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4" data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4" type="video/mp4" />
-              <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm" data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm" type="video/webm" />
+              <source src="public/Binary_numbers_moving_202604050949.mp4"
+                data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.mp4" type="video/mp4" />
+              <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm"
+                data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm" type="video/webm" />
             </video>
             <video autoPlay loop muted playsInline className="video-element cc-mobile lazy" poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/68b94e4d516ea438fbb2fe65_mobile-view-poster-for-video-six.png">
-              <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.mp4" data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.mp4" type="video/mp4" />
-              <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.webm" data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.webm" type="video/webm" />
+              <source src="public/Binary_numbers_moving_202604050949.mp4"
+                data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.mp4" type="video/mp4" />
+              <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.webm"
+                data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.webm" type="video/webm" />
             </video>
           </div>
         </div>
@@ -116,7 +122,8 @@ export default function FeaturesSection({ onOpenSignup }) {
             <div className="video-card_content">
               <img src="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/688cabc1905674bbd3f3fa4d_instant-issuance-icon.svg" loading="lazy" alt="" />
               <h2 className="video-card_title heading-h6 u-color-typography-25">Instant Issuance</h2>
-              <div className="video-card_text text-xl">Generate cards instantly and run your advertising campaigns without delays or hassles.</div>
+              <div className="video-card_text text-xl">
+                Generate cards instantly and run your advertising campaigns without delays or hassles.</div>
               <div className="button-wrapper">
                 <a
                   data-trigger="form-modal-open"
