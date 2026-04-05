@@ -2,10 +2,9 @@ import { useEffect, useRef } from 'react'
 
 const TYPEFORM_URL = 'https://form.typeform.com/to/e4ZYOiQe'
 const CARD_IMAGES = [
-  '/Banking-1.svg',
-  '/Banking-2.svg',
-  '/Banking-3.1.svg',
-  '/Banking-4.1.svg',
+  '/Bank1.1.svg',
+  '/Bank2.1.svg',
+  '/Banking3.1.svg',
 ]
 
 
