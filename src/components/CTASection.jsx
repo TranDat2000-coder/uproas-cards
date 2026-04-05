@@ -1,7 +1,7 @@
 const SOCIALS = [
   {
     href: 'https://www.linkedin.com/company/86950206/',
-    src: 'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b777db08479b8f4185_d01f97baa5835e76352c1d998baa9ee5b_Linkedin.webp',
+    src: 'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b777db08479b8f4185_d01f97baa5835e76352c1d998ba9ee5b_Linkedin.webp',
     alt: 'Linkedin',
   },
   {
