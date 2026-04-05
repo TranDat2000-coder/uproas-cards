@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-const TELEGRAM_URL = 'https://t.me/telegram/ZG_Mine#'
+const TELEGRAM_URL = 'https://t.me/ZG_Mine#'
 
 const spendOptions = [
   { id: 'xwzKDYPbDDhZ', label: '<$1K' },
