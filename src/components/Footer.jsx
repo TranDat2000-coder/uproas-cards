@@ -17,7 +17,7 @@ const FOOTER_SOCIALS = [
     alt: 'Linkedin',
   },
   {
-    href: 'https://t.me/telegram/ZG_Mine#',
+    href: 'https://t.me/ZG_Mine#',
     src: 'https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/6859a1b7763790da7eabc642_eefeb9a88ac35b1d5cf67d3d97c96b87_Telegram.webp',
     alt: 'Telegram',
   },
