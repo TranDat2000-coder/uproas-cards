@@ -96,7 +96,7 @@ export default function Footer() {
                     >
                       <div className="navbar_link_text-wrap">
                         <span className="navbar_link_text cc-footer">
-                          Contact ussss
+                          Contact us
                         </span>
                       </div>
                     </a>

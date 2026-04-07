@@ -45,7 +45,7 @@ export default function FeaturesSection({ onOpenSignup }) {
                 data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68db6b62842664598dea791b_card_06-transcode.webm" type="video/webm" />
             </video>
             <video autoPlay loop muted playsInline className="video-element cc-mobile lazy" poster="https://cdn.prod.website-files.com/682e10925e475b2f723fc5bc/68b94e4d516ea438fbb2fe65_mobile-view-poster-for-video-six.png">
-              <source src="/banking_choie.mp4"
+              <source src="/result-banking.mp4"
                 data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.mp4" type="video/mp4" />
               <source src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.webm"
                 data-src="https://cdn.prod.website-files.com/68185a5ac5e91731a60d1b18%2F68e1f84634626e3842575999_card_06_mobile%20%281%29-transcode.webm" type="video/webm" />
