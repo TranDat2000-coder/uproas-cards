@@ -21,10 +21,16 @@ const FAQS = [
 
 function LeadingLogoMini() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 33 28" fill="none">
-      <path d="M20.3628 28L15.4265 19.4093L10.1797 10.2718L12.6479 5.97097L16.0805 0L20.8432 8.29876L18.859 11.7535L16.0805 6.91686L14.1517 10.2718L17.0892 15.3856L22.347 24.5416H26.1934L23.9469 20.6139L25.9311 17.1591L32.157 28H20.3628Z" fill="#8C3CFC" />
-      <path d="M0 27.9993L8.26551 13.6113L10.2497 17.0661L8.47242 20.1661L5.95619 24.5372H14.5358L16.5236 27.9993H0Z" fill="#8C3CFC" />
-    </svg>
+    <div>
+      <img
+        src="/Logo-uproadcards.svg"
+        loading="lazy"
+        width="100"
+        height="100"
+        alt="Uproas Cards"
+        className="cta-card_logo"
+      />
+    </div>
   )
 }
 
